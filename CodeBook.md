@@ -11,8 +11,8 @@
 #######train/X_train.txt
 ######3.DATA FILES
 #######test/y_test.txt
-#####train/y_train.txt
-####features.txt - Names of column variables in the dataTable
+#######train/y_train.txt
+#######features.txt - Names of column variables in the dataTable
 
 ####activity_labels.txt - Links the class labels with their activity name.
 
