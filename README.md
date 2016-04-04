@@ -49,16 +49,15 @@ Replacing numeric labels of activity in column 2 of the data frame (from 1 to 6)
 
 ##Appropriately labels the data set with descriptive variable names
 ###name.new <- names(data.sub)
-###name.new <- gsub("[(][)]", "", name.new)
-###name.new <- gsub("^t", "TimeDomain_", name.new)
-###name.new <- gsub("^f", "FrequencyDomain_", name.new)
-###name.new <- gsub("Acc", "Accelerometer", name.new)
-###name.new <- gsub("Gyro", "Gyroscope", name.new)
-###name.new <- gsub("Mag", "Magnitude", name.new)
-###name.new <- gsub("-mean-", "_Mean_", name.new)
-###name.new <- gsub("-std-", "_StandardDeviation_", name.new)
-###name.new <- gsub("-", "_", name.new)
-###names(data.sub) <- name.new
+ gsub("[(][)]", "", name.new)
+ "^t" >>"TimeDomain_"
+"^f">> "FrequencyDomain_"
+"Acc">>"Accelerometer"
+"Gyro">>"Gyroscope"
+"Mag">>"Magnitude"
+"-mean-">>"_Mean_"
+"-std-">>"_StandardDeviation_"
+"-">>"_"
 Rename the colname of data.sub with gsub order.
 
 ##Step 8-Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
